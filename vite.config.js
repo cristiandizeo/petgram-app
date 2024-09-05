@@ -8,4 +8,15 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+ 
+    server: {
+        hmr: {
+            host: 'localhost'
+        },
+    },
+
+    // Agrega la configuración de watch aquí
+    watch: {
+        usePolling: true
+    }
 });
